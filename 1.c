@@ -125,3 +125,14 @@ void display_no(int no)
        delay_us(100);
     }
 }
+
+
+PORTA=0x00;
+DDRA=0x00;
+PORTB=0x00;
+DDRB=0x08;
+PORTC=0x00;
+DDRC=0x00;
+PORTD=0x00;
+DDRD=0xFF;
+TCCR0=0x6A;
