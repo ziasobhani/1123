@@ -1,0 +1,4 @@
+[CodeWizard]
+Toolset=AVR
+[Chip]
+Type=ATmega16
