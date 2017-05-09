@@ -125,3 +125,4 @@ void display_no(int no)
        delay_us(100);
     }
 }
+//uhukhkhk

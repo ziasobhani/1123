@@ -102,7 +102,7 @@ void direction(char dir)
          break;
    }
 }
-/*void display_no(int no)
+void display_no(int no)
 {   
    int array[5];
    int i=0,j;
@@ -124,107 +124,4 @@ void direction(char dir)
        lcd_putchar(48+array[j]);
        delay_us(100);
     }
-}*/
-
-// ali
-<<<<<<< HEAD
-=======
-while (1)
-      {    
-      if (PINC.2==0 || PINC.3==0 || PINC.4==0 ) 
-      {    
-          delay_ms(10); 
-          if (PINC.2==0) 
-                  direction(1);
-          if (PINC.3==0) 
-                 direction(2);
-          if (PINC.4==0) 
-                 direction(3);
-                 
-       } 
-       
-      lcd_gotoxy(0,1);
-      lcd_putsf("           ");
-      lcd_gotoxy(0,1);
-      lcd_putsf("OCR0: ");
-      display_no(OCR0);
-         
-      if (PINC.0==0 || PINC.1==0 ) 
-      {    
-          delay_ms(10);
-          
-          if (PINC.0==0) 
-          {     
-              
-              if (OCR0> 250)
-                  OCR0=255; 
-              else
-                  OCR0=OCR0+5;
-          }    
-          else if (PINC.1==0) 
-          {     
-                   
-                   if(OCR0<5)
-                      OCR0=0;
-                   else      
-                      OCR0=OCR0-5;
-          }         
-       }
-       else
-       {
-          
-             
-       }    
-        
-    }
-} 
-while (1)
-      {    
-      if (PINC.2==0 || PINC.3==0 || PINC.4==0 ) 
-      {    
-          delay_ms(10); 
-          if (PINC.2==0) 
-                  direction(1);
-          if (PINC.3==0) 
-                 direction(2);
-          if (PINC.4==0) 
-                 direction(3);
-                 
-       } 
-       
-      lcd_gotoxy(0,1);
-      lcd_putsf("           ");
-      lcd_gotoxy(0,1);
-      lcd_putsf("OCR0: ");
-      display_no(OCR0);
-         
-      if (PINC.0==0 || PINC.1==0 ) 
-      {    
-          delay_ms(10);
-          
-          if (PINC.0==0) 
-          {     
-              
-              if (OCR0> 250)
-                  OCR0=255; 
-              else
-                  OCR0=OCR0+5;
-          }    
-          else if (PINC.1==0) 
-          {     
-                   
-                   if(OCR0<5)
-                      OCR0=0;
-                   else      
-                      OCR0=OCR0-5;
-          }         
-       }
-       else
-       {
-          
-             
-       }    
-        
-    }
-} 
->>>>>>> new
+}
